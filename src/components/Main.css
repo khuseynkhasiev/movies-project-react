@@ -1,0 +1,8 @@
+.main{
+    min-height: calc(100vh - 70px - 64px);
+}
+
+.main__search{
+    max-width: 800px;
+    width: 100%;
+}
