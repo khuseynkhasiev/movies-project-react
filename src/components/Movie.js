@@ -1,3 +1,4 @@
+import './Movie.css';
 function Movie({movie}) {
     const {
         Title: title,
@@ -12,9 +13,9 @@ function Movie({movie}) {
             <div className="card-image waves-effect waves-block waves-light">
                     {
                         poster === 'N/A' ?
-                            <img className="activator" src={'https://via.placeholder.com/468x533?text=Visit+Blogging.com+NowC/O https://placeholder.com/'} />
+                            <img className="activator movie__img" src={'https://via.placeholder.com/468x533?text=Visit+Blogging.com+NowC/O https://placeholder.com/'} />
                             :
-                            <img className="activator" src={poster} />
+                            <img className="activator movie__img" src={poster} />
                     }
             </div>
             <div className="card-content">

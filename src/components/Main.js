@@ -14,8 +14,8 @@ class Main extends React.Component{
             .catch((date) => console.log(date.error))
     }
 
-    searchMovies = (str) => {
-        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=2fc673cb&s=${str}`)
+    searchMovies = (str, type) => {
+        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=2fc673cb&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
             .then((response) => response.json())
             .then((data) => this.setState({movies: data.Search}))
             .catch((date) => console.log(date.error))

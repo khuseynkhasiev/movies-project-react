@@ -6,3 +6,7 @@
     max-width: 800px;
     width: 100%;
 }
+.main__search-radio{
+    display: flex;
+    justify-content: space-between;
+}
