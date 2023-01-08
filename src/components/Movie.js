@@ -13,9 +13,9 @@ function Movie({movie}) {
             <div className="card-image waves-effect waves-block waves-light">
                     {
                         poster === 'N/A' ?
-                            <img className="activator movie__img" src={'https://via.placeholder.com/468x533?text=Visit+Blogging.com+NowC/O https://placeholder.com/'} />
+                            <img className="activator movie__img" alt={title} src={'https://via.placeholder.com/468x533?text=Visit+Blogging.com+NowC/O https://placeholder.com/'} />
                             :
-                            <img className="activator movie__img" src={poster} />
+                            <img className="activator movie__img" alt={"Empty"} src={poster} />
                     }
             </div>
             <div className="card-content">
